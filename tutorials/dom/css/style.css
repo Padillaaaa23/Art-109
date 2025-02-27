@@ -1,0 +1,135 @@
+
+/*
+CSS RESETS:
+ Border box reset:
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ 62.5% Fix: https: //www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+*/
+
+
+/* html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+} */
+
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+
+html,
+body {
+   height: 100%;
+}
+
+
+body {
+    font-size: 1.6rem;
+   /* font-size 1.6rem is now the same as 16px */
+   line-height: 1.6;
+   font-family: 'Lucida San', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans'
+   Unicode, Geneva, Verdana, Sans-serif;
+   background-color: black;
+   color: white;
+}
+
+header{
+    padding: 50px;
+    background-color:rgb(236, 187, 96) ;
+    text-align: center;
+}
+
+/* main {
+    max-width: 800px;
+    margin: 50px auto;
+} */
+
+.image-div{
+   display: inline-block;
+
+}
+
+.hidden{
+   visibility: hidden;
+}
+/* Artboard layout */
+
+   #artboard_1 {
+      position:absolute;
+      top: 200px;
+      left: 5vw;
+   }
+
+   #artboard_2 {
+      position:absolute;
+      top: 200px;
+      left: 30vw;
+   }
+
+   #artboard_3 {
+      position:absolute;
+      top: 200px;
+      left: 55vw;
+   }
+
+   #artboard_4 {
+      position:absolute;
+      top: 700px;
+      left: 5vw;
+   }
+
+   #artboard_5 {
+      position:absolute;
+      top: 700px;
+      left: 30vw;
+   }
+
+   #artboard_6 {
+      position:absolute;
+      top: 700px;
+      left:55vw;
+   }
+
+   #artboard_7 {
+      position:absolute;
+      top: 1200px;
+      left: 5vw;
+   }
+
+   #artboard_8 {
+      position:absolute;
+      top: 1200px;
+      left: 30vw;
+   }
+
+   #artboard_9 {
+      position:absolute;
+      top: 1200px;
+      left: 55vw;
+   }
+
+
+
+/* when having it on fixed it will stay in place even after scrolling */
+   /* #finalp {
+   position: fixed; 
+   top: 200px;
+   left: 50vw;
+   }
+
+   #frontimage {
+   position: absolute; 
+   top: 500px;
+   left:50vw;
+   }
+
+   #futuro {
+   position: absolute; 
+   top: 200px;
+   left:20vw;
+   } */

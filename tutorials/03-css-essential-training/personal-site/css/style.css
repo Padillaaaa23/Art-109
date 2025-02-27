@@ -60,9 +60,15 @@ footer a:hover{
 
 /*PROFILE
 -------------------------*/
+.project-item img{
+
+    width: 300px;
+    float: left;
+}
 
 /*PROJECTS
 -------------------------*/
+
 
 /*WORK EXPERIENCE
 -------------------------*/
