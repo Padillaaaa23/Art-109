@@ -1,0 +1,160 @@
+
+
+header {
+    padding: 20px 10px 20px 10px;
+    border: 2px;
+    background-color: white;
+   
+}
+.text-title{
+    font-family: monospace;
+    font-size: 30px; 
+    color: black;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+
+}
+
+.text-sub{
+    font-family: monospace;
+    font-size: 20px; 
+    color: grey;
+    text-align: center;
+    margin-left: 45px;
+    margin-bottom: 0px;
+
+}
+
+#page-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: grey;
+    font-family: monospace;
+    font-size: 30px; 
+    text-align: center;
+}
+
+.hidden{
+    visibility: hidden;
+
+ }
+
+.final { 
+    font-family: monospace;
+    font-size: 20px; 
+    color: black;
+    text-align: center;
+    border-style: outset;
+    border-radius: 25px;
+    padding: 20px;
+
+  
+    width:40%;
+    max-width: 400px;
+    min-width: 250px;
+
+    position: relative;
+    top: 250px;
+    left: 40vw;  
+    
+}
+
+/* .final_response {
+
+    font-family: monospace;
+    font-size: 20px; 
+    color: black;
+    text-align: left;
+    border-style: outset;
+    border-radius: 25px;
+    padding: 20px;
+
+  
+    width:40%;
+    max-width: 400px;
+    min-width: 250px; 
+
+    position: relative;
+    top: 250px;
+   margin-left: auto;
+} */
+
+
+
+
+.center-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 80%;
+    position: relative;
+    gap:10px;
+
+    margin-left: 250px; 
+    margin-top: 70px;  
+ } 
+ 
+ 
+ .dropbtn{
+   background-color: white;
+   color: grey;
+   padding: 20px 40px 40px 20px;
+   margin-right: 90px;
+   margin-left: 90px;
+   font-family: monospace;
+    font-size: 30px; 
+   border: 1px solid grey;
+   border-radius: 25px;
+   cursor: pointer;
+   text-align: left;
+ }
+
+ 
+ .dropdown {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   font-family: monospace;
+    font-size: 20px; 
+   background-color: white;
+
+   /* min-width: 160px; */
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   border-radius: 25px;
+   padding: 20px 20px 20px 20px;
+   z-index: 1;
+   margin-right: 90px;
+   margin-left: 90px;
+   width: 70%;
+ }
+ 
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   border-radius: 25px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown-content a:hover {background-color: rgba(0,0,0,0.2)}
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+ 
+ .dropdown:hover .dropbtn {
+   background-color: white;
+ }
+
+
+
+

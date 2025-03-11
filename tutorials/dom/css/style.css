@@ -59,7 +59,7 @@ header{
 }
 /* Artboard layout */
 
-   #artboard_1 {
+   #artboard_1 {#
       position:absolute;
       top: 200px;
       left: 5vw;
