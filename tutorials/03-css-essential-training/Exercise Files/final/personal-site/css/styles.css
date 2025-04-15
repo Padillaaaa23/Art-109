@@ -84,7 +84,7 @@ footer a:hover {
 /* HOME
 ------------------------------------*/
 .home {
-    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background: url(../images/mainimage.png) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -103,13 +103,20 @@ footer a:hover {
     .content-bg {
         padding: 20px;
     }
+
+.content-bg-01 {
+        background: rgb(255 255 255 / 0.9);
+        padding: 30px;
+    }
 }
+
+
 
 
 /* RESUME
 ------------------------------------*/
 .resume header::before {
-    background: url(../images/bg-home-office-studio.jpg) center;
+    background: url(../images/mainimage.png) center;
     background-size: cover;
     content: "";
     display: block;
@@ -218,8 +225,8 @@ footer a:hover {
 /* FOOTER
 ------------------------------------*/
 footer {
-    background: #222;
-    color: #d3d4d6;
+    background: white;
+    color: black; 
 }
 .socials {
     list-style-type: none;
@@ -228,6 +235,7 @@ footer {
 .socials li {
     display: inline-block;
     margin-left: 10px;
+    color: black;
 }
 .socials img {
     width: 32px;
