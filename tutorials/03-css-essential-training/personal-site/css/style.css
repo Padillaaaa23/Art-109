@@ -7,6 +7,42 @@ Light gray    #d3d4d6
 Off-white     #f6f6f6
 */
 
+
+/*Navigation Bar
+-------------------------*/
+* {
+    text-decoration: none;
+}
+
+.navbar{
+    background: white;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a{
+    font-size: 35px;
+    font-weight: 600
+}
+    li{
+        list-style: none;
+        display: inline-block;
+    }
+    li a{
+        color: #FF8C00;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+
+    }
+
+
 /*GLOBAL STYLES
 -------------------------*/
 /*
@@ -165,8 +201,8 @@ footer a:hover{
 }
 .download-link {
     position: fixed;
-    top: 5px;
-    left: 5px;
+    top: 95px;
+    left: 25px;
     font-size: 1.5rem;
 }
 @media screen and (max-width: 1200px){
@@ -310,5 +346,128 @@ footer {
     footer {
         text-align: center;
         padding: 10px;
+    }
+}
+
+/* Contact */
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../images/cover.png);
+    background-size: cover;
+}
+/* .contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+}
+
+.contact .content p{
+    font-weight: 300;
+    color: black;
+} */
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+ .contactForm{
+ width: 100%;
+ max-width: 600px;
+ padding: 40px;
+ background:rgb(255 255 255 / 0.9);
+ border-radius: 10px;
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+}
+
+.contactForm p{
+    font-weight: 300;
+    color: black;
+} 
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5%;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #3c8453 ;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #3c8453;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font: 18px;
+}
+
+@media (max-width: 991px){
+    .contact
+    {padding: 50px;}
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo,
+    .contactForm {
+        width: 100%;
     }
 }
