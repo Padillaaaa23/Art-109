@@ -47,6 +47,12 @@ h3 {
     font-size: 2.4rem;
 }
 
+nav {
+    background: white;
+    color: black; 
+}
+
+
 /* links */
 a {
     color: #3c8453;
@@ -89,12 +95,14 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 }
-.home .content-wrapper {
+.home .content-wrapper {  /*Footer text box*/
     flex: 1 0 auto;
 }
 .content-bg {
     background: rgb(255 255 255 / 0.9);
     padding: 30px;
+    
+  
 }
 @media screen and (max-width:650px){
     .home .content-wrapper {
@@ -193,6 +201,8 @@ footer a:hover {
 /* Work Experience
 ------------------------------------*/
 .work-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin: 30px 0;
 }
 .work-details p {

@@ -15,13 +15,47 @@ https/*
 */
 html {
     box-sizing: border-box;
+    font-size:62.5%;
   }
   *, *:before, *:after {
     box-sizing: inherit;
   }
-body {
+
+  html, body{
+    height: 100%;
+  }
+
+  body {
     background: #f6f6f6;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 1.4;
 }
+
+h1, h2, h3 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+h1 {
+    font-size: 7rem;
+    line-height: 0.85;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+
+/* nav {
+    background: white;
+    color: black; 
+} */
+
+
 /*link*/
 a {
     color: #3c8453;
@@ -40,23 +74,105 @@ footer a:hover{
 }
 .btn {
     background: #3c8453;
-    color:  #f6f6f6
+    color: #f6f6f6;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    border-radius: 4px;
 }
+
+.content-wrapper {
+    margin:0 auto;
+    padding: 30px;
+    max-width:900px;
+}
+
 
 /*HOME
 -------------------------*/
 .home {
-    background: url("../images/bg-home-office-studio.jpg") no-repeat;
+    background: url(../images/cover-500px.png) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.home .content-wrapper {  /*Footer text box*/
+    flex: 1 0 auto;
+}
+.content-bg {
+    background: rgb(255 255 255 / 0.9);
+    padding: 30px;
+    border-radius: 25px;
+  
+}
+@media screen and (max-width:650px){
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 10px;
+    }
+
+    .content-bg-0 {
+        background: rgb(255 255 255 / 0.9);
+        padding: 30px;
+    }
 }
 
-.home .content-wrapper {
-    background: rgb( 225 225 225 / 0.9) ;
+@media screen and (min-width: 860px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child {
+        margin-top: 0;
+    }
 }
+ 
 
 /*RESUME
 -------------------------*/
+.resume header::before {
+    background: url(../images/cover-500px.png) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+.resume-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.resume-section h2 {
+    border-bottom: 2px dashed #d3d4d6;
+}
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 1200px){
+    .download-link {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 500px){
+    .resume header::before {
+        height: 200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+}
 
 /*PROFILE
 -------------------------*/
@@ -68,19 +184,86 @@ footer a:hover{
 
 /*PROJECTS
 -------------------------*/
+.content-bg1 {
+    background: rgb(255 255 255 / 0.9);
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+@media screen and (min-width:860px) {
+    .project-item {
+        display: flow-root;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width:650px) and (max-width:859px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
 
 
 /*WORK EXPERIENCE
 -------------------------*/
+.work-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 30px 0;
+    column-gap: 30px;
+}
+.work-details p {
+    margin: 0;
+}
+
+@media screen and (min-width: 860px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child {
+        margin-top: 0;
+    }
+}
+    
 
 /*EDUCATION
 -------------------------*/
+.education-item {
+    margin: 30px 0;
+}
+.education-item p{
+    margin: 0;
+}
 
 /*FOOTER
 -------------------------*/
 footer {
-    background: #222;
-    color: #d3d4d6
+    background:white;
+    color: black;
 }
 .socials {
     list-style-type: none;
@@ -88,7 +271,28 @@ footer {
 }
 .socials li{
     display: inline-block;
+    margin-left: 10px;
+    color: black;
 }
 .socials img {
     width: 32px;
+}
+
+.socials img:hover {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 860px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
 }
