@@ -25,7 +25,7 @@ camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight,
 
 renderer = new THREE.WebGLRenderer({antialias: true});
 renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+// document.body.appendChild(renderer.domElement);
 
 
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -86,6 +86,9 @@ scene.add( tubeMesh );
 
 
 camera.position.z = 5;
+
+const container = document.getElementById('three-container');
+container.appendChild(renderer.domElement);
 }
 
 
